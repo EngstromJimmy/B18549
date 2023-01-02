@@ -12,7 +12,7 @@ The source code here on GitHub should be updated.
 
 ## Chapter 3 - Managing State - Part 1 
 - [x] New Template
-- [ ] Repo: RaveDB sample, EF Core sample
+- [ ] Repo: RavenDB sample, EF Core sample
 
 ## Chapter 4 - Understanding Basic Blazor Components 
 - [x] New Template
@@ -21,17 +21,17 @@ The source code here on GitHub should be updated.
 - [x] New Template
 
 ## Chapter 6 - Building Forms with Validation
-- [ ] New Template
-- [ ] Navigation controls
-- [ ] Add Get, Set, After (https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-7.0)
-Changed some things in CategoryList and TagList for reloading lists
+- [x] New Template
+- [x] Navigation controls
+- [x] Add Get, Set, After (https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-7.0)
+- [ ] Changed some things in CategoryList and TagList for reloading lists
 ```
  Items = await _api.GetCategoriesAsync();
 ```
 
 ## Chapter 7 - Creating an API
 - [ ] New Template
-Fix the Weblient with a / on the DeleteTag and DeleteCategory
+- [ ] Fix the Weblient with a / on the DeleteTag and DeleteCategory
 
 ## Chapter 8 - Adding Authentication and Authorization
 - [ ] New Template
