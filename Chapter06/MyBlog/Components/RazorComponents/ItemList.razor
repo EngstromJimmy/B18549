@@ -5,11 +5,11 @@
     <Virtualize Items="@Items" Context="item">
         <tr>
             <td>
-                <button class="btn btn-primary" @onclick="@(()=>                {SelectEvent.InvokeAsync(item); })">                  Select</button>
+                <button class="btn btn-primary" @onclick="@(()=>{SelectEvent.InvokeAsync(item); })">Select</button>
             </td>
             <td>@ItemTemplate(item)</td>
             <td>
-                <button class="btn btn-danger" @onclick="@(()=>               {DeleteEvent.InvokeAsync(item);})">                 Delete</button>
+                <button class="btn btn-danger" @onclick="@(()=>{DeleteEvent.InvokeAsync(item);})"> Delete</button>
             </td>
         </tr>
     </Virtualize>

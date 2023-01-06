@@ -44,6 +44,7 @@
         try
         {
             await _api.SaveCategoryAsync(Item);
+            Items = (await _api.GetCategoriesAsync()) ?? new();
             Item = new Category();
         }
         catch { }
