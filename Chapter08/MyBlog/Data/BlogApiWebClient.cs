@@ -75,7 +75,7 @@ public class BlogApiWebClient : IBlogApi
         try
         {
             var httpclient = _factory.CreateClient("Authenticated");
-            await httpclient.DeleteAsync($"api/Categories{id}");
+            await httpclient.DeleteAsync($"api/Categories/{id}");
         }
         catch (AccessTokenNotAvailableException exception)
         {
@@ -112,7 +112,7 @@ public class BlogApiWebClient : IBlogApi
         try
         {
             var httpclient = _factory.CreateClient("Authenticated");
-            await httpclient.DeleteAsync($"api/Tags{id}");
+            await httpclient.DeleteAsync($"api/Tags/{id}");
         }
         catch (AccessTokenNotAvailableException exception)
         {

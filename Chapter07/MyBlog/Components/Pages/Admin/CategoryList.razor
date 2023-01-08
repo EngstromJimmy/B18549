@@ -1,4 +1,5 @@
 @page "/admin/categories"
+@attribute [Authorize]
 @using Components.RazorComponents
 @inject IBlogApi _api
 <h3>Categories</h3>
@@ -44,6 +45,10 @@
         try
         {
             await _api.SaveCategoryAsync(Item);
+            if (!Items.Contains(Item))
+            {
+                Items.Add(Item);
+            }
             Item = new Category();
         }
         catch { }
