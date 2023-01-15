@@ -24,24 +24,22 @@ The source code here on GitHub should be updated.
 - [x] New Template
 - [x] Navigation controls
 - [x] Add Get, Set, After (https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-7.0)
-- [ ] Changed some things in CategoryList and TagList for reloading lists
-```
- Items = await _api.GetCategoriesAsync();
-```
+- [x] Changed some things in CategoryList and TagList for reloading lists
+
 
 ## Chapter 7 - Creating an API
-- [ ] New Template
-- [ ] Fix the Weblient with a / on the DeleteTag and DeleteCategory
+- [x] New Template
+- [x] Fix the Weblient with a / on the DeleteTag and DeleteCategory
 
 ## Chapter 8 - Adding Authentication and Authorization
-- [ ] New Template
+- [x] New Template
 
 ## Chapter 9 - Sharing Code and Resources between Projects
-- [ ] New Template
+- [x] New Template
 
 ## Chapter 10 - Making JavaScript Interop
-- [ ] New Template
-- [ ] JSImport/JSExport
+- [x] New Template
+- [x] JSImport/JSExport
 
 ## Chapter 11 - Managing State - Part 2
 - [ ] New Template
