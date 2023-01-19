@@ -125,7 +125,7 @@ public class BlogApiJsonDirectAccess : IBlogApi
         await LoadTagsAsync();
         if (_tags == null)
             throw new Exception("Tags not found");
-        return _tags.First(b => b.Id == id);
+        return _tags.FirstOrDefault(b => b.Id == id);
     }
 
 
@@ -149,7 +149,7 @@ public class BlogApiJsonDirectAccess : IBlogApi
         await LoadCategoriesAsync();
         if (_categories == null)
             throw new Exception("Categories not found");
-        return _categories.First(b => b.Id == id);
+        return _categories.FirstOrDefault(b => b.Id == id);
     }
 
     public async Task<List<BlogPost>?> GetBlogPostsAsync(int numberofposts, int startindex)
@@ -162,7 +162,7 @@ public class BlogApiJsonDirectAccess : IBlogApi
         await LoadBlogPostsAsync();
         if (_blogPosts == null)
             throw new Exception("Blog posts not found");
-        return _blogPosts.First(b => b.Id == id);
+        return _blogPosts.FirstOrDefault(b => b.Id == id);
     }
     public async Task<int> GetBlogPostCountAsync()
     {
