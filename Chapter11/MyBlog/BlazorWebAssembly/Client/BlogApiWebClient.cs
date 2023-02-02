@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using System.Net.Http.Json;
 using System.Text.Json;
 
-namespace Data;
+namespace BlazorWebAssembly.Client;
 
 public class BlogApiWebClient : IBlogApi
 {
